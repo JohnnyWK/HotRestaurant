@@ -39,14 +39,14 @@ app.get("/api/tables", function(req, res) {
 });
 
 // Displays a single character, or returns false
-app.get("/api/characters/:character", function(req, res) {
-  var chosen = req.params.character;
+app.get("/api/tables/:customer", function(req, res) {
+  var chosen = req.params.customer;
 
   console.log(chosen);
 
-  for (var i = 0; i < characters.length; i++) {
-    if (chosen === characters[i].routeName) {
-      return res.json(characters[i]);
+  for (var i = 0; i < customers.length; i++) {
+    if (chosen === customers[i].routeName) {
+      return res.json(customers[i]);
     }
   }
 
