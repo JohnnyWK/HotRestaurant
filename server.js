@@ -12,19 +12,26 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
-app.listen(PORT, function(){
-    console.log("listening on port 3000")
-})
 
 let reserved = [];
 let waiting = [];
 
+// ROUTES
 app.get("/", function(req, res){
     res.sendFile(path.join(__dirname, "/public/index.html"))
 })
 
-// ROUTES
-// GET / --> index.html = here's some info about the restaurant
-// GET /reservation ---> reservation.html
-// GET /tables  --> tables
+app.get("/reserve", function(req, res){
+    res.sendFile(path.join(__dirname, "/reserve.html"))
+})
+
+app.get("/tables", function(req, res){
+    res.sendFile(path.join(__dirname, "tables.html"))
+})
+
+
+
+app.listen(PORT, function(){
+    console.log("listening on port 3000")
+})
 
