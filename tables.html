@@ -13,19 +13,19 @@
 
 </head>
 
-<body>
+<body style = "background-color: black">
 
   <div class="container">
 
-    <div class="jumbotron">
+    <div class="jumbotron" style = "background-color: rgb(25, 17, 71); color: cornsilk">
       <h1 class="text-center"><span class="fa fa-fire"></span> Hot Restaurant</h1>
       <hr>
       <h2 class="text-center">Current Reservations and Waiting List</h2>
       <br>
 
       <div class="text-center">
-        <a href="/reserve"><button class="btn btn-lg btn-danger"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
-        <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+        <a href="/reserve"><button class="btn btn-lg" style="color: cornsilk; background-color: darkslategray"><span class="fa fa-credit-card"></span> Make Reservation</button></a>
+        <a href="/"><button class="btn btn-lg" style="color: cornsilk; background-color: darkslategray"><span class="fa fa-home"></span></button></a>
       </div>
     </div>
 
@@ -33,7 +33,7 @@
       <div class="col-lg-12">
 
         <!-- Current Tables in Use -->
-        <div class="card">
+        <div class="card" style = "background-color: rgb(25, 17, 71); color: cornsilk">
           <div class="card-header">
             <h4>Current Reservations</h4>
           </div>
@@ -43,7 +43,7 @@
         </div>
 
         <!-- Waiting List Card -->
-        <div class="card mt-4">
+        <div class="card mt-4" style = "background-color: rgb(25, 17, 71); color: cornsilk">
           <div class="card-header">
             <h4>Waiting List</h4>
           </div>
@@ -55,10 +55,10 @@
     </div>
 
 
-    <footer class="footer mt-4">
+    <footer class="footer mt-4" style = "color: white">
       <div class="container">
         <p>Control Panel</p>
-        <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API
+        <p><a href="#" id="clear" style = "color: white">Clear Table</a> | <a href="/api/tables" style = "color: white">API Table Link</a> | <a href="/api/waitlist" style = "color: white">API
             Wait List</a>
       </div>
     </footer>
