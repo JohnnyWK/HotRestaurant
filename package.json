@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/JohnnyWK/HotRestaurant/issues"
   },
-  "homepage": "https://github.com/JohnnyWK/HotRestaurant#readme"
+  "homepage": "https://github.com/JohnnyWK/HotRestaurant#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

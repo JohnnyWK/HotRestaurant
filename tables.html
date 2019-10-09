@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/eb7e5c70a7.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -18,7 +19,7 @@
   <div class="container">
 
     <div class="jumbotron" style = "background-color: rgb(25, 17, 71); color: cornsilk">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Hot Restaurant</h1>
+      <h1 class="text-center"><span class="fa fa-dragon"></span> Hot Restaurant</h1>
       <hr>
       <h2 class="text-center">Current Reservations and Waiting List</h2>
       <br>
@@ -91,11 +92,11 @@
           var tableList = $("#tableList");
 
           // Then display the fields in the HTML (Section Name, Date, URL)
-          var listItem = $("<li class='list-group-item mt-4'>");
+          var listItem = $("<li class='list-group-item mt-4' style='background-color: darkslategray!important'>");
 
           listItem.append(
             $("<h2>").text("Table #" + (i + 1)),
-            $("<hr>"),
+            $("<hr style='background-color: cornsilk'>"),
             $("<h2>").text("ID: " + tableData[i].customerID),
             $("<h2>").text("Name: " + tableData[i].customerName),
             $("<h2>").text("Email: " + tableData[i].customerEmail),
