@@ -45,7 +45,7 @@ app.get("/api/", function(req, res) {
   res.json(data);
 });
 
-app.get("/api/clear", function(req, res) {
+app.post("/api/clear", function(req, res) {
   data.reservations.length = 0;
   data.waitlist.length = 0;
   res.json(data);
